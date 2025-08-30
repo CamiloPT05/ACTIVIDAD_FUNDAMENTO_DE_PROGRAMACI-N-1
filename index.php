@@ -20,15 +20,13 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Variables de entrada
         $PL = $_POST['PL'];
         $PMA = $_POST['PMA'];
         $PMI = $_POST['PMI'];
         $PJ = $_POST['PJ'];
         $PV = $_POST['PV'];
         $PS = $_POST['PS'];
-
-        // Producción total y promedio
+        
         $PT = $PL + $PMA + $PMI + $PJ + $PV + $PS;
         $PP = $PT / 6;
 
@@ -46,3 +44,4 @@
     ?>
 </body>
 </html>
+
